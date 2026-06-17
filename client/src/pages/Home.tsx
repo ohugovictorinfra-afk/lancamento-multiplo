@@ -6,6 +6,7 @@ import SocialProofSection from "@/components/SocialProofSection";
 import ObjectionsSection from "@/components/ObjectionsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import LiveClassSection from "@/components/LiveClassSection";
+import AboutLuizSection from "@/components/AboutLuizSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ObjectionsSection />
       <ComparisonSection />
       <LiveClassSection />
+      <AboutLuizSection />
       <SocialProofSection />
       <FinalCTASection />
 
