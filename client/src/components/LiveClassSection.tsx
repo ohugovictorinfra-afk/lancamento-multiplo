@@ -7,7 +7,7 @@ export default function LiveClassSection() {
           style={{ fontFamily: "var(--font-display)" }}
         >
           Uma aula ao vivo de 3 horas onde você vai entender o bastidor real
-          de quem opera o{" "}
+          de quem opera{" "}
           <span className="text-accent">um dos maiores lançamentos do Brasil</span>
           {" "}— sem filtro, sem enrolação.
         </h2>

@@ -6,11 +6,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import CTAButton from "./CTAButton";
 
 const testimonials = [
-  { src: "https://via.placeholder.com/400x500?text=Arthur+Santos", alt: "Depoimento — Arthur Santos, R$ 182.700" },
-  { src: "https://via.placeholder.com/400x500?text=Lucas+Miike", alt: "Depoimento — Lucas Miike, R$ 1.039.797" },
-  { src: "https://via.placeholder.com/400x500?text=Dr.+D%C3%A9cio", alt: "Depoimento — Dr. Décio, primeira mentoria de 36k" },
-  { src: "https://via.placeholder.com/400x500?text=Elaine+Magari", alt: "Depoimento — Elaine Magari, 300k em vendas" },
-  { src: "https://via.placeholder.com/400x500?text=Carlos+Garcia", alt: "Depoimento — Carlos Garcia, quarta venda em abril" },
+  { src: "/manus-storage/depoimento-1_b4519ab9.jpg", alt: "Depoimento — Arthur Santos, R$ 182.700" },
+  { src: "/manus-storage/depoimento-2_97cac983.jpg", alt: "Depoimento — Lucas Miike, R$ 1.039.797" },
+  { src: "/manus-storage/depoimento-3_9a4f9360.jpg", alt: "Depoimento — Dr. Décio, primeira mentoria de 36k" },
+  { src: "/manus-storage/depoimento-4_3fb91a86.jpg", alt: "Depoimento — Elaine Magari, 300k em vendas" },
+  { src: "/manus-storage/depoimento-5_b528055d.png", alt: "Depoimento — Carlos Garcia, quarta venda em abril" },
 ];
 
 export default function SocialProofSection() {
@@ -66,7 +66,7 @@ export default function SocialProofSection() {
           <button
             type="button"
             onClick={() => emblaApi?.scrollPrev()}
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 rounded-full bg-background/80 border border-border items-center justify-center hover:bg-accent hover:text-white transition-colors backdrop-blur-sm"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 rounded-full bg-background/80 border border-border items-center justify-center hover:bg-accent hover:text-white transition-colors backdrop-blur-sm flex"
             aria-label="Anterior"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -74,7 +74,7 @@ export default function SocialProofSection() {
           <button
             type="button"
             onClick={() => emblaApi?.scrollNext()}
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 rounded-full bg-background/80 border border-border items-center justify-center hover:bg-accent hover:text-white transition-colors backdrop-blur-sm"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 rounded-full bg-background/80 border border-border items-center justify-center hover:bg-accent hover:text-white transition-colors backdrop-blur-sm flex"
             aria-label="Próximo"
           >
             <ChevronRight className="w-5 h-5" />
