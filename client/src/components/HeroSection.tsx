@@ -241,7 +241,7 @@ export default function HeroSection() {
               </div>
 
               <div className="hidden lg:block flex-1 relative">
-                <div className="absolute top-8 right-0 bg-card/95 border border-border rounded-lg p-4 shadow-lg backdrop-blur-md z-20">
+                <div className="absolute top-1/3 right-0 bg-card/95 border border-border rounded-lg p-4 shadow-lg backdrop-blur-md z-20">
                   <p className="text-xs text-muted-foreground mb-2">Milhões Gerados</p>
                   <p className="text-2xl font-bold text-accent" style={{ fontFamily: "var(--font-display)" }}>R$ 300M+</p>
                 </div>
