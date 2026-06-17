@@ -5,9 +5,7 @@ const benefits = [
   "3 horas de treinamento estratégico ao vivo",
   "O mapa completo do Lançamento Múltiplo",
   "Bastidores reais de lançamentos de 8 dígitos",
-  "O método para montar seu time comercial do zero",
   "3 modelos de front-end validados para copiar e colar",
-  "Q&A real-time para tirar dúvidas",
 ];
 
 export default function FinalCTASection() {
