@@ -1,3 +1,5 @@
+"use client";
+
 import { Check } from "lucide-react";
 import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 import { Button } from "@/components/ui/button";
@@ -13,7 +15,7 @@ export default function FinalCTASectionV2() {
   const { trackInitiateCheckout } = useFacebookPixel();
 
   const handleCheckoutClick = () => {
-    trackInitiateCheckout(47, 'BRL');
+    trackInitiateCheckout(97, 'BRL');
   };
 
   return (
