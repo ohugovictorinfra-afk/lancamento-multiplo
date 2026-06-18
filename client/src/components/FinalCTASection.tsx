@@ -1,5 +1,8 @@
-import { Button } from "@/components/ui/button";
+"use client";
+
 import { Check } from "lucide-react";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
+import { Button } from "@/components/ui/button";
 
 const benefits = [
   "3 horas de treinamento estratégico ao vivo",
@@ -9,6 +12,12 @@ const benefits = [
 ];
 
 export default function FinalCTASection() {
+  const { trackInitiateCheckout } = useFacebookPixel();
+
+  const handleCheckoutClick = () => {
+    trackInitiateCheckout(97, 'BRL');
+  };
+
   return (
     <section className="relative py-16 md:py-20 lg:py-24 bg-background overflow-hidden">
       <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
@@ -94,6 +103,7 @@ export default function FinalCTASection() {
                   "0 0 30px rgba(255, 68, 68, 0.6), 0 0 60px rgba(255, 68, 68, 0.3)",
                 fontFamily: "var(--font-body)",
               }}
+              onClick={handleCheckoutClick}
             >
               <a href="https://pay.onprofit.com.br/P5JlkAul?off=P0CRCX" target="_blank" rel="noopener noreferrer">
                 GARANTIR MEU INGRESSO — R$ 97

@@ -1,7 +1,19 @@
+"use client";
+
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
 export default function ThankYou() {
+  const { trackLead, trackPurchase } = useFacebookPixel();
+
+  useEffect(() => {
+    // Track purchase/lead conversion on page load
+    trackPurchase(97, 'BRL');
+    trackLead({ value: 97, currency: 'BRL', event_source: 'website' });
+  }, [trackPurchase, trackLead]);
+
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center px-4 py-12">
       <div className="max-w-2xl w-full text-center space-y-8">

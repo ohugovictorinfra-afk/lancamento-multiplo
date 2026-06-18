@@ -7,8 +7,10 @@ import ObjectionsSection from "@/components/ObjectionsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import LiveClassSection from "@/components/LiveClassSection";
 import AboutLuizSection, { FAQSection } from "@/components/AboutLuizSection";
+import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
 export default function Home() {
+  useFacebookPixel();
   return (
     <div className="min-h-screen bg-background text-foreground">
       <HeroSection />
