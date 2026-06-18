@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSectionV2 from "@/components/HeroSectionV2";
 import WhatYouLearnSection from "@/components/WhatYouLearnSection";
 import ForWhomSection from "@/components/ForWhomSection";
 import ObjectionsSection from "@/components/ObjectionsSection";
@@ -20,15 +20,15 @@ export default function HomeV2() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <main className="flex-1">
-        <HeroSection />
+        <HeroSectionV2 />
         <WhatYouLearnSection />
         <ForWhomSection />
         <ObjectionsSection />
         <ComparisonSection />
         <LiveClassSection />
         <AboutLuizSection />
-        <FinalCTASectionV2 />
         <SocialProofSection />
+        <FinalCTASectionV2 />
       </main>
     </div>
   );
