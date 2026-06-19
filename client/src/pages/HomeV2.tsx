@@ -1,5 +1,5 @@
 import HeroSectionV2 from "@/components/HeroSectionV2";
-import WhatYouLearnSectionV2 from "@/components/WhatYouLearnSectionV2";
+import WhatYouLearnSection from "@/components/WhatYouLearnSection";
 import ForWhomSection from "@/components/ForWhomSection";
 import ComparisonSectionV2 from "@/components/ComparisonSectionV2";
 import SocialProofSectionV2 from "@/components/SocialProofSectionV2";
@@ -14,7 +14,7 @@ export default function HomeV2() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <HeroSectionV2 />
-      <WhatYouLearnSectionV2 />
+      <WhatYouLearnSection />
       <ForWhomSection />
       <ObjectionsSection />
       <ComparisonSectionV2 />
