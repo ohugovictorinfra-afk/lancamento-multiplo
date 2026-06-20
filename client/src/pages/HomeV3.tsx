@@ -1,27 +1,27 @@
-import HeroSectionV2 from "@/components/HeroSectionV2";
-import WhatYouLearnSectionV2 from "@/components/WhatYouLearnSectionV2";
+import HeroSectionV3 from "@/components/HeroSectionV3";
+import WhatYouLearnSectionV3 from "@/components/WhatYouLearnSectionV3";
 import ForWhomSection from "@/components/ForWhomSection";
-import ComparisonSectionV2 from "@/components/ComparisonSectionV2";
-import SocialProofSectionV2 from "@/components/SocialProofSectionV2";
+import ComparisonSectionV3 from "@/components/ComparisonSectionV3";
+import SocialProofSectionV3 from "@/components/SocialProofSectionV3";
 import ObjectionsSection from "@/components/ObjectionsSection";
-import FinalCTASectionV2 from "@/components/FinalCTASectionV2";
+import FinalCTASectionV3 from "@/components/FinalCTASectionV3";
 import LiveClassSection from "@/components/LiveClassSection";
 import AboutLuizSection, { FAQSection } from "@/components/AboutLuizSection";
 import { useFacebookPixel } from "@/hooks/useFacebookPixel";
 
-export default function HomeV2() {
+export default function Home() {
   useFacebookPixel();
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <HeroSectionV2 />
-      <WhatYouLearnSectionV2 />
+      <HeroSectionV3 />
+      <WhatYouLearnSectionV3 />
       <ForWhomSection />
       <ObjectionsSection />
-      <ComparisonSectionV2 />
+      <ComparisonSectionV3 />
       <LiveClassSection />
       <AboutLuizSection />
-      <SocialProofSectionV2 />
-      <FinalCTASectionV2 />
+      <SocialProofSectionV3 />
+      <FinalCTASectionV3 />
       <FAQSection />
 
       <footer className="relative bg-secondary/30 border-t border-border py-12">
